@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans";
+    }
+
+    body>* {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    nav {
+        font-size: 14px;
+    }
+
+    .p-navbar {
+        position: relative;
+        padding: 10px 0px;
+        height: 50px;
+    }
+
+    .right-p-navbar {
+        position: absolute;
+        right: 20px;
+    }
+
+    .right-p-navbar>li {
+
+        display: inline-block;
+        margin: 0px 10px;
+    }
+
+    .right-p-navbar>li>img {
+
+        transform: translateY(-2px);
+    }
+
+    .s-navbar {
+        position: relative;
+        padding: 10px 0px;
+        transform: translateY(-40px);
+    }
+
+    .s-navbar>* {
+        display: inline-block;
+    }
+
+
+    .s-input {
+        border: 2px solid #ffda00;
+        border-radius: 30px;
+        overflow: hidden;
+        position: absolute;
+        left: 30%;
+        top: 70%;
+        transform: scale(1.2);
+    }
+
+    .s-navbar span:nth-child(1) {
+        padding: 8px;
+    }
+
+    .s-navbar span:nth-child(3) {
+        padding: 8px 10px;
+        background-color: #ffda00;
+    }
+
+    .s-navbar input {
+        border: none;
+        outline: none;
+        margin: 4px;
+        width: 300px;
+    }
+
+    .s-navbar ul {
+        position: absolute;
+        left: 70%;
+        top: 70%;
+        list-style: none;
+        font-size: 16px;
+    }
+
+    .s-navbar ul li {
+        display: inline-block;
+        margin: 0px 10px;
+    }
+    .parent .image {
+        float: left;
+    }
+    .parent{
+        line-height: 30px;
+        color: red;
+    }
+    .heading{
+        font-size: 18px;
+        font-weight: 600;
+        color: black;
+        
+    }
+   
+    .bold{
+        font-size: 30px;
+        font-weight: 800;
+        color: white;
+        background-color: red;
+       padding: 15px;
+       margin-top: 30px;
+       font-style: italic;
+    }
+    .price {
+        margin-top: 20px;
+       font-size: 18px;
+    }
+    .color{
+        margin-top: 20px;
+       font-size: 18px;
+      
+    }
+    .ship{
+        margin-top: 20px;
+       font-size: 18px;
+    }
+    .price{
+        margin-top: 20px;
+    }
+    .btn{
+        margin-top: 10px;
+   
+     }
+     button{
+        font-size: 25px;
+        padding: 10px;
+        font-weight: 800;
+     }
+
+</style>
+<body>
+    <nav>
+        <section class="p-navbar">
+            <ul class="right-p-navbar">
+                <li>Support Center</li>
+                <li>Ship to Ship to <img src="https://lipis.github.io/flag-icon-css/flags/4x3/in.svg" width="20"
+                        alt="">/USD</li>
+                <li>Language</li>
+                <li>Country website</li>
+            </ul>
+        </section>
+    </nav>
+    <section class="s-navbar">
+
+        <div class="left-s-navbar">
+            <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true"
+                alt="" width="220px">
+        </div>
+
+        <div class="right-s-navbar">
+
+            <div class="s-input">
+                <span>All</span>
+                <input type="text" placeholder="Search-Here">
+                <span class="fa fa-search"> </span>
+            </div>
+
+        </div>
+
+        <ul>
+
+            <li id="signin" onclick="signin()">
+                <ion-icon name="person-outline"></ion-icon><span>Sign in</span>
+            </li>
+            <li id="signin" onclick="signin()">
+                <ion-icon name="heart-outline"></ion-icon><span>Favourites</span>
+            </li>
+            <li>
+                <ion-icon name="cart-outline"></ion-icon><span>Cart</span>
+            </li>
+        </ul>
+
+    </section>
+
+
+   <div class="parent">
+
+    <div class="image">
+        <img src="https://gloimg.gbtcdn.com/soa/gb/item/6575801921400676352/16214/goods_img-v6/513545fcc49e.jpg">
+    </div >
+    <div class="heading">
+      <p>KOSPET Prime S Dual Chips Dual Modes Dual Cameras 4G Smartwatch <br> Phone 1050mAh Battery 1.6 inch IPS Screen 1GB RAM 16GB ROM <br>
+         Healthcare Smart Watch - Black China</p>
+    </div>
+    <div class="bold">
+      <p>FLASH SALE</p>
+    </div>
+    <div class="price">
+        <span>price:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span id="value" style="font-size: 32px;">$1299</span>
+    </div>
+    <div class="color">
+        <span>color :</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="height: 50px; width: 80px; border: 1px solid red; font-size: 20px; font-weight: 500; padding: 5px;text-align: center; ">Black</span>
+       
+    </div>
+    <div class="ship">
+        <span>Ships from :</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="height: 50px; width: 80px; border: 1px solid red; font-size: 20px; font-weight: 500; padding: 5px;text-align: center; ">China</span>
+     
+    </div>
+   <div class="price">
+    <span>Quantity :</span>
+    <input type="number">
+   </div>
+   <div class="btn">
+       <span><button style="background-color: red; color: white;">Add to Cart</button></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><button onclick="purchase()">Buy Now</button></span>
+   </div>
+</div>
+</body>
+</html>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+ function purchase(){
+     window.location="file:///C:/Users/User/Desktop/ftweb10/gearbest/pic/purchase.html"
+ }
+</script>

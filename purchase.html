@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+</head>
+<style>
+  div img{
+       
+        width: 220px;
+    }
+    .address{
+        margin-left: 150px;
+        font-size: 25px;
+        font-weight: 800;
+    }
+    .parentdiv{
+       margin-top: 0;
+        line-height: 50px;
+        margin-left: 300px;
+        font-size: 14px;
+    }
+    .parentdiv span{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .parentdiv input{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    button{
+        background-color: yellow;
+        margin-left: 100px;
+        font-size: 22px;
+        font-weight: 600;
+        padding: 5px;
+        text-align: center;
+        width: 150px;
+    }
+</style>
+<body>
+    <div class="image">
+        <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true" >
+    </div>
+   
+    <div class="address"><P>Add new Address</P></div>
+    <div class="parentdiv">
+        
+        <div id="fname">
+            <span>*First name</span>
+            <input type="text" placeholder="enter your name">
+        </div>
+        <div id="lname">
+           <span>*Last name</span>
+           <input type="text" placeholder="enter your Last name">
+       </div>
+   
+       <div id="add1">
+           <span>*Address Line1:</span>
+           <input type="text" placeholder="Street address,Flat suite,unit,Building etc">
+       </div>
+       <div id="add2">
+           <span>*Address Line2:</span>
+           <input type="text" >
+       </div>
+       <div id="country">
+           <span>*Country/Region:</span>
+           <SELECT >
+             <OPTION>India</OPTION>
+               <OPTION>China</OPTION>
+             </SELECT>
+          
+         </div>
+   
+         <div id="state">  
+           <span>*State/Province:</span>
+           <SELECT >
+               <OPTION>Please Select</OPTION>
+             <OPTION>Bihar</OPTION>
+               <OPTION>Delhi</OPTION>
+               <OPTION>Goa</OPTION>
+               <OPTION>Kolkata</OPTION>
+             </SELECT>
+           </div>
+   
+           <div id="city">
+               <span>*City</span>
+               <input type="text" >
+           </div>
+   
+           <div id="pin">
+               <span>*Zip/Postal Code</span>
+               <input type="number" >
+           </div>
+
+          <div id="phone">
+            <span>*Phone Number  +</span>
+            <input type="number" >
+            <p style="line-height: 1px;">Please enter 10 digit mobile number</p>
+          </div>
+          
+
+          <div id="email">
+            <span>*E-mail Address</span>
+            <input type="text" >
+        </div>
+      
+        <div><input type="checkbox" id="check">    
+            <span>Set me as my Default address</span>  
+    </div>
+    
+    <div>
+        <button onclick="payment()">Confirm</button>
+    </div>
+
+
+
+    </div>
+    
+</body>
+</html>
+<script>
+    function payment(){
+        // var fname=document.getElementById("fname").value
+        // var lname=document.getElementById("lname").value
+        // var add1=document.getElementById("add1").value
+        // var add2=document.getElementById("add2").value
+        // var country=document.getElementById("country").value
+        // var state=document.getElementById("state").value
+        // var city=document.getElementById("city").value
+        // var pin=document.getElementById("pin").value
+        // var phone=document.getElementById("phone").value
+        // var email=document.getElementById("email").value
+
+        // if(fname !=null && lname!=null && add1!=null && add2!=null && country!=null && state!=null && city!=null && pin!=null && phone!=null && email!=null){
+        //     window.location="file:///C:/Users/User/Desktop/ftweb10/gearbest/pic/payment.html"
+        //     console.log("hi");
+        // }
+        // else{
+        //     var message="please fill the required field"
+        //     alert(message)
+        //     console.log("bye");
+        // }
+        window.location="file:///C:/Users/User/Desktop/ftweb10/gearbest/pic/payment.html"
+            console.log("hi");
+    }
+</script>

@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home page</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+</head>
+<style>
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, Sans-serif;
+
+  }
+
+  .space {
+    height: 150px;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 60px 0px;
+  }
+
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #f5f4fa;
+  }
+
+  .footer .col {
+    /* width: 190px; */
+    width: 200px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 17px;
+
+
+    padding: 20px 0px 5px 0px;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: normal;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 0.250em; */
+    font-weight: bold;
+  }
+
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer .col ul li {
+    color: #999999;
+    /* font-size: 14px; */
+    font-size: 12px;
+    font-family: inherit;
+    /* font-weight: bold; */
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+
+  .clearfix {
+    clear: both;
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+
+    .social h1 {
+      margin: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+
+    .footer .col h1 {
+      font-size: 14px;
+    }
+
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+
+    .footer .col h1 {
+      font-size: 14px;
+    }
+
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* font-family: "Open Sans"; */
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+
+  }
+
+  body>* {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* nav {
+        font-size: 14px;
+    } */
+
+  .first-navbar {
+    /* position: relative; */
+    height: 52px;
+    position: relative;
+    padding: 9px 0.5px;
+    /* height: 50px; */
+  }
+
+  .first-right-navbar {
+    right: 18px;
+    position: absolute;
+  }
+
+  .first-right-navbar>li {
+    margin: 0.5px 9px;
+    display: inline-block;
+    /* margin: 0px 10px; */
+
+  }
+
+  /* .right-p-navbar>li>img {
+
+        transform: translateY(-2px);
+    } */
+
+  .second-navbar {
+    transform: translateY(-38px);
+    padding: 10px 0.5px;
+
+    /* position: relative; */
+    /* padding: 10px 0px; */
+    /* transform: translateY(-40px); */
+  }
+
+  /* .s-navbar>* {
+        display: inline-block;
+    } */
+
+
+  .input {
+    border: 2px solid #ffda00;
+    position: absolute;
+    top: 70%;
+    left: 32%;
+    overflow: hidden;
+  }
+
+  .second-navbar span:nth-child(1) {
+
+    padding: 9px;
+  }
+
+  .second-navbar span:nth-child(3) {
+
+    background-color: hsl(51, 100%, 50%);
+    padding: 9px 10px;
+  }
+
+  .second-navbar input {
+    width: 340px;
+    border: none;
+    margin: 3px;
+
+    outline: none;
+  }
+
+  .second-navbar ul {
+
+
+    font-size: 16px;
+    position: absolute;
+    left: 70%;
+    top: 70%;
+  }
+
+  .second-navbar ul li {
+    margin: 0px 12px;
+    display: inline-block;
+
+
+  }
+
+  header {
+
+    height: 425px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header .heading {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    background: hsl(51, 100%, 50%);
+  }
+
+  li:hover {
+    text-decoration: underline;
+  }
+
+  header ul .heading-list {
+    float: left;
+    list-style: none;
+    padding: 8.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 18px;
+
+
+  }
+
+
+
+  header ul .heading-list:nth-last-of-type(4) {
+    background: black;
+    color: white;
+
+    padding: 7%;
+    padding-top: 1%;
+
+    padding-bottom: 2%;
+  }
+
+  header .menu ul {
+    padding-left: 2%;
+    padding-right: 3%;
+    padding-bottom: .7%;
+
+    top: 10%;
+    z-index: 2;
+    background: rgba(241, 239, 239, 0.897);
+    position: absolute;
+    height: 100%;
+  }
+
+  header .menu ul li {
+
+    font-size: 16px;
+
+    margin: 4%;
+    color: lightslategray;
+    list-style: none;
+  }
+
+  header .menu ul li:hover {
+    color: black;
+
+
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+
+  .slideshow img {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slideshow .container {
+    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    /* z-index: -1; */
+  }
+
+  .slideshow .slide {
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    height: 66.2vh;
+  }
+
+  .slide-change {
+    display: none;
+  }
+
+  .slide-label {
+    position: absolute;
+    bottom: 1rem;
+    display: block;
+    z-index: 5;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-indent: 1rem;
+    overflow: hidden;
+    background: red;
+    border: 2px solid lightslategray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.25s;
+    top: 60%;
+  }
+
+  .slide-arrow {
+    position: absolute;
+    font-size: 25px;
+    color: rgb(72, 81, 90);
+    background: black;
+    padding: 2px 5px 2px 5px;
+    border-radius: 50%;
+    left: 68%;
+    border: 3px solid lightslategray;
+    top: 59%;
+    z-index: 5;
+  }
+
+  .slide-arrow:hover {
+    transform: rotate(-360deg);
+    transition-duration: 2s;
+  }
+
+  .end-arrow {
+    position: absolute !important;
+    left: 92.5% !important;
+  }
+
+  .end-arrow:hover {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+  }
+
+  .slide-label:nth-last-of-type(6) {
+    right: 25%;
+    z-index: 5;
+  }
+
+  .slide-label:nth-last-of-type(5) {
+    right: 22%;
+    z-index: 5;
+  }
+
+  .slide-label:nth-last-of-type(4) {
+    right: 19%;
+    z-index: 5;
+  }
+
+  .slide-label:nth-last-of-type(3) {
+    right: 16%;
+    z-index: 5;
+  }
+
+  .slide-label:nth-last-of-type(2) {
+    right: 13%;
+    z-index: 5;
+  }
+
+  .slide-label:nth-last-of-type(1) {
+    right: 10%;
+    z-index: 5;
+  }
+
+  .slide-content {
+    width: 100%;
+    background: #fff;
+    float: left;
+    margin-right: -100%;
+    height: 100%;
+  }
+
+  .slide-change:checked+.slide-label {
+    background: black;
+  }
+
+  .slide-change:not(:checked)+.slide-label+.slide-content {
+    opacity: 0;
+    transition: opacity 0.35s;
+    pointer-events: none;
+  }
+
+  .slide-change:checked+.slide-label+.slide-content {
+    animation: slide 1s;
+  }
+
+  .collection>h1 {
+    margin: 20px 0px;
+  }
+
+  .collection>h1>i {
+    margin: 0px 6px 0px 0px;
+  }
+
+  #images {
+    display: inline-block;
+    height: 185px;
+    width: 185px;
+    ;
+    overflow: hidden;
+    margin: 0px 2px;
+    position: relative;
+  }
+
+
+
+
+  .collection>div.items {
+    display: inline-block;
+    height: 190px;
+    width: 190px;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    overflow: hidden;
+    margin: 0px 2px;
+    position: relative;
+    text-align: center;
+  }
+
+  .collection>div.items img {
+    max-height: 155px;
+  }
+
+  .collection>div.items .cost {
+    width: 100%;
+    background-color: #F30240;
+    font-size: 18px;
+    padding: 6px 0px;
+    color: white;
+    font-weight: bolder;
+
+  }
+
+  .collection>div.items:hover .cost {
+    transform: translateY(-30px)
+  }
+
+  .s-deals>h1 {
+    margin: 20px 0px;
+  }
+
+  .s-deals>h1>i {
+    margin: 0px 6px 0px 0px;
+  }
+
+  .s-deals>.s-outer-section {
+    height: 340px;
+    width: 100%;
+  }
+
+  .s-deals>.s-outer-section>.s-inner-section {
+    height: 100%;
+    width: 202px;
+    display: inline-block;
+    margin: 0px -2px;
+    vertical-align: top;
+  }
+
+  .s-deals>.s-outer-section>.s-pricing {
+    position: relative;
+  }
+
+  .s-deals>.s-outer-section>.s-pricing>.s-inner-img {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .s-deals>.s-outer-section>.s-pricing>.s-inner-img>.s-badge {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    right: 10px;
+    box-sizing: content-box;
+  }
+
+  .s-deals>.s-outer-section>.s-pricing>p:nth-of-type(1) {
+    margin: 2px 4px;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .s-deals>.s-outer-section>.s-pricing>p:nth-of-type(2) {
+    color: rgba(0, 0, 0, 0.459);
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  .s-deals>.s-outer-section>.s-pricing>p:nth-of-type(3) {
+    margin: 10px;
+    font-size: 20px;
+    color: #ff0000;
+  }
+
+  .s-deals>.s-outer-section>.s-pricing>.s-inner-img img {
+    max-width: 100%;
+  }
+
+  .s-pricing {
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+  }
+
+  .s-pricing:hover {
+    box-shadow: -1px 10px 15px -3px rgba(0, 0, 0, 0.67);
+    z-index: 5;
+  }
+
+
+  /* span {
+  content: "\2193";
+} */
+</style>
+
+<body>
+  <nav>
+    <section class="first-navbar">
+      <ul class="first-right-navbar">
+        <li>Support Center</li>
+        <li> Ship to <img src="https://lipis.github.io/flag-icon-css/flags/4x3/in.svg" width="20" alt="">/India</li>
+        <li>Language</li>
+        <li>Country website</li>
+      </ul>
+    </section>
+  </nav>
+  <section class="second-navbar">
+
+    <div class="left-second-navbar">
+      <img src="https://uidesign.gbtcdn.com/GB/images/promotion/2019/a_evan/Gearbest/logo_gearbest.png?imbypass=true"
+        alt="" width="220px">
+    </div>
+
+    <div class="right-second-navbar" ;">
+
+      <div class="input" style="border-radius: 60px;">
+        <select name="All" style="border: none; outline: none;">
+          <option value="">All</option>
+          <option value="">Mobile</option>
+          <option value="Telivison">Telivison</option>
+
+        </select>
+
+        <input type="text" placeholder="Search-Here">
+        <span class="fa fa-search"> </span>
+      </div>
+
+    </div>
+
+    <ul>
+
+      <li id="signin" onclick="signin()">
+        <ion-icon name="person-outline"></ion-icon><span>Sign in</span>
+      </li>
+      <li id="signin" onclick="signin()">
+        <ion-icon name="heart-outline"></ion-icon><span>Favourites</span>
+      </li>
+      <li id="cart" onclick="cart()">
+        <ion-icon name="cart-outline"></ion-icon><span>Cart</span>
+      </li>
+    </ul>
+
+  </section>
+
+  <header>
+    <ul class="heading">
+      <li class="heading-list">CATEGORY</li>
+      <li class="heading-list">NEW ARRIVAL</li>
+      <li class="heading-list">DEALS</li>
+      <li class="heading-list">APP ONLY</li>
+    </ul>
+
+    <div class="menu">
+
+      <ul>
+        <li>Consumer Electronics</li>
+        <li>Industrial & Scientific</li>
+        <li>Cell pgone & Accessories</li>
+        <li>Appliances</li>
+        <li>Outdoor,Fitness & Sports</li>
+        <li>Computers,Tablets & Office</li>
+        <li>Health & Personal Care</li>
+        <li>Home Improvement & Tools</li>
+        <li>Drones,Toys & Hobbies</li>
+        <li>Home & Garden</li>
+        <!-- <li>Motor & Car Electronics</li>
+                <li>Mens Faishon</li>
+                <li>Watches & Jewelry</li> -->
+
+      </ul>
+
+    </div>
+
+    <div class="slideshow">
+
+      <div class="container">
+
+        <div class="slide">
+
+          <p class="slide-arrow"><b>/></b> </p> <input type="radio" name="slide-switches" id="slide-text" checked
+            class="slide-change">
+
+          <label for="slide-text" class="slide-label"></label>
+
+          <div class="slide-content padded">
+
+            <img src="https://uidesign.gbtcdn.com/GB/image/7611/1190x420_en.jpg?imbypass=true" alt="">
+
+          </div>
+
+          <input type="radio" name="slide-switches" id="slide-image" checked class="slide-change">
+
+          <label for="slide-image" class="slide-label"></label>
+
+          <div class="slide-content padded">
+
+            <img src="https://uidesign.gbtcdn.com/GB/image/7778/1190x420_en.jpg?imbypass=true" alt="">
+
+          </div>
+
+          <input type="radio" name="slide-switches" id="slide-video" checked class="slide-change">
+
+          <label for="slide-video" class="slide-label"></label>
+
+          <div class="slide-content padded">
+
+            <img src="https://uidesign.gbtcdn.com/GB/image/7678/en-1190x420.jpg?imbypass=true" alt="">
+
+          </div>
+
+          <input type="radio" name="slide-switches" id="slider-img4" checked class="slide-change">
+
+          <label for="slider-img4" class="slide-label"></label>
+
+          <div class="slide-content padded">
+
+            <img src="https://uidesign.gbtcdn.com/GB/image/7746/1190x420_en.jpg?imbypass=true" alt="">
+
+          </div>
+
+          <p class="slide-arrow end-arrow"><b>/></b></p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section style="text-align:center;margin-top: 8px; text-align: center;">
+
+    <img src="https://uidesign.gbtcdn.com/GB/image/7701/230_120_en.jpg?imbypass=true" alt="1">
+    <img src="https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg?imbypass=true" alt="2">
+    <img src="https://uidesign.gbtcdn.com/GB/image/6874/230x120b_en.jpg" alt="3">
+    <img src="https://uidesign.gbtcdn.com/GB/image/6080/230x120.jpg?imbypass=true" alt="4">
+    <img src="https://uidesign.gbtcdn.com/GB/image/7257/230_120_en.jpg?imbypass=true" alt="5">
+
+  </section>
+
+  <section class="collection">
+
+    <h1 style="font-size: 22px; font-weight: 500; ">
+      <ion-icon name="briefcase"></ion-icon>Collection
+    </h1>
+
+    <div id="images">
+
+      <img src="https://gloimg.gbtcdn.com/soa/gb/item/6640203384464166912/16273/goods_img-v1/bb8dec47a623.jpg" alt="2">
+
+    </div>
+
+    <div class="items">
+
+      <img src="https://gloimg.gbtcdn.com/storage/item/6650355246537330688/16272/5028052e6260.jpg_220x220.jpg" alt="2">
+
+      <p>Helibry Official Store</p>
+
+      <div class="cost">$31.9</div>
+
+    </div>
+
+    <div class="items">
+
+      <img src="https://gloimg.gbtcdn.com/storage/item/6679780713995481088/16040/69279a3ae287.jpg_220x220.jpg" alt="3">
+
+      <p>Smloro Store</p>
+
+      <div class="cost">$19.99</div>
+
+    </div>
+
+    <div class="items">
+
+      <img src="https://gloimg.gbtcdn.com/storage/item/6650355246537330688/16271/701fd447d7ac.jpg_220x220.jpg" alt="4">
+
+      <p>Star Bajar</p>
+
+      <div class="cost">$29.99</div>
+
+    </div>
+
+    <div class="items">
+
+      <img src="https://gloimg.gbtcdn.com/storage/item/6584010133165776896/16219/667fda24f7a6.jpg_220x220.jpg" alt="5">
+
+      <p>YASMHITEC Store</p>
+
+      <div class="cost">$28.00</div>
+
+    </div>
+
+    <div class="items">
+
+      <img src="https://gloimg.gbtcdn.com/storage/store/6665183167926444032/16221/f34704b6686e.jpg_220x220.jpg" alt="6">
+
+      <p>Lych Store</p>
+
+      <div class="cost">$174.99</div>
+
+    </div>
+
+  </section>
+  <div style="margin-right: 205px;">
+    <img src="pic/pic1.png">
+  </div>
+
+
+
+  <section class="s-deals">
+
+    <!-- <h1><i class="fa fa-thumbs-up" aria-hidden="true"></i>SUPER DEALS</h1> -->
+
+    <div class="s-outer-section">
+
+      <div class="s-inner-section s-side img">
+        <img src="./pic/super-1.png" alt="1">
+      </div>
+
+      <div class="s-inner-section s-pricing">
+
+        <div class="s-inner-img">
+          <img src="./pic/super-2.webp" alt="2">
+          <div class="s-badge">70% Off</div>
+        </div>
+
+        <p>Xiaomi Wowstick 21 in 1 Precision Mini Handheld</p>
+        <p>RRp:$21.94</p>
+        <p>$15.99</p>
+
+      </div>
+
+      <div class="s-inner-section s-pricing">
+        <div class="s-inner-img">
+
+          <img src="./pic/super-3.webp" alt="3">
+          <div class="s-badge">70% Off</div>
+
+        </div>
+
+        <p>Xiaomi Wowstick 21 in 1 Precision Mini Handheld</p>
+        <p>RRp:$21.94</p>
+        <p>$15.99</p>
+
+      </div>
+
+      <div class="s-inner-section s-pricing">
+
+        <div class="s-inner-img">
+
+          <img src="./pic/super-4.webp" alt="4">
+          <div class="s-badge">70% Off</div>
+
+        </div>
+
+        <p>Xiaomi Wowstick 21 in 1 Precision Mini Handheld</p>
+        <p>RRp:$21.94</p>
+        <p>$15.99</p>
+
+      </div>
+
+      <div class="s-inner-section s-pricing">
+
+        <div class="s-inner-img">
+
+          <img src="./pic/super-5.webp" alt="5">
+          <div class="s-badge">70% Off</div>
+
+        </div>
+
+        <p>Xiaomi Wowstick 21 in 1 Precision Mini Handheld</p>
+        <p>RRp:$21.94</p>
+        <p>$15.99</p>
+
+      </div>
+
+      <div class="s-inner-section s-pricing">
+
+        <div class="s-inner-img">
+
+          <img src="./pic/super-6.webp" alt="6">
+          <div class="s-badge">70% Off</div>
+
+        </div>
+
+        <p>Xiaomi Wowstick 21 in 1 Precision Mini Handheld</p>
+        <p>RRp:$21.94</p>
+        <p>$15.99</p>
+
+      </div>
+
+    </div>
+
+  </section>
+  <div style="margin-right: 205px;">
+    <img src="pic/pic2.png">
+  </div>
+
+
+
+
+<!-- Footer section -->
+
+
+  <div class="space">
+
+  </div>
+  <!-- FOOTER START -->
+  <div class="footer">
+    <div class="contain">
+      <div class="col">
+        <h1 style="color: black;">Company Information</h1>
+        <ul>
+          <li>About Us</li>
+          <li>Top Searches</li>
+          <li>Privacy Policy</li>
+          <li>Terms and Conditions</li>
+          <li>Intellectual Property Policy</li>
+          <li>Testimonial</li>
+          <li>Contact Us</li>
+          <li>Report Security Issue</li>
+          <li>Sell On Gearbest</li>
+          <li>Cookies Policy</li>
+          <li>Top Brands</li>
+          <li>Gearbest Oficials Blog</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1 style="color: black;">Customer Service</h1>
+        <ul>
+          <li>Shipping Information</li>
+          <li>My Favourites</li>
+          <li>FAQ</li>
+          <li>My Points</li>
+          <li>Warranty And Reaturn</li>
+          <li>Payment Method</li>
+          <li>Deposit Expansion</li>
+          <li>FAQ</li>
+          <li>Site Map</li>
+          <li>Gearbest Wallet Instruction</li>
+          <li>FAQs About COVID-19</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1 style="color: black;">Most Frequent FAQ's</h1>
+        <ul>
+          <li>Shipping Information</li>
+          <li>My Favourites</li>
+          <li>FAQ</li>
+          <li>My Points</li>
+          <li>Warranty And Reaturn</li>
+          <li>Payment Method</li>
+          <li>Deposit Expansion</li>
+          <li>FAQ</li>
+          <li>Site Map</li>
+          <li>Gearbest Wallet Instruction</li>
+          <li>FAQs About COVID-19</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1 style="color: black;">More Details</h1>
+        <ul>
+          <li>About</li>
+          <li>Mission</li>
+          <li>Services</li>
+          <li>Social</li>
+          <li>Get in touch</li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1 style="color: black;">Other Business</h1>
+        <ul>
+          <li>Partnership Program</li>
+          <li>Associate Program</li>
+        </ul>
+      </div>
+      <div class="col social">
+        <h1 style="color: black;">Download App</h1>
+        <ul>
+          <li>Save $3 with App & New User Only</li>
+          <li><img
+              src="https://c8.alamy.com/comp/2D7YF90/kiev-ukraine-september-21-2020-download-on-the-app-store-and-get-it-on-google-play-button-icons-printed-on-paper-2D7YF90.jpg"
+              width="32" style="width: 200px;"></li>
+
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="credit-cards" style="text-align: center; width: 100%">
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_visa.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_master.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_paypal.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_unionpay.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_linepay.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_711_pay.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_tw_fm_pay.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_taishin.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_amex.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_ecpay.png" />
+    <img height="40" src="https://shoplineimg.com/assets/footer/card_jcb.png" />
+  </div>
+
+</body>
+
+</html>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  function signin() {
+    window.location = "file:///C:/Users/User/Desktop/ftweb10/gearbest/signin.html?Uname=&Pass=#"
+  }
+  function cart() {
+    window.location = "file:///C:/Users/User/Desktop/ftweb10/gearbest/cart.html"
+  }
+</script>
